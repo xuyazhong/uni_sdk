@@ -40,7 +40,7 @@ Pod::Spec.new do |s|
     camera.vendored_libraries =  "uniapp/Camera/*.a"
     camera.resources = ['uniapp/Camera/DCMediaEditingController.bundle']
     camera.dependency 'uni_sdk/Core'
-    camera.frameworks = 'AssetsLibrary', 'Photos', 'CoreMedia', 'MetalKit', 'GLKit'
+    camera.frameworks = 'Photos', 'MetalKit'
   end
 
   s.subspec 'Video' do |video|
@@ -49,7 +49,7 @@ Pod::Spec.new do |s|
     video.vendored_frameworks = "uniapp/Video/**/*.framework"
     video.resources = ['uniapp/Video/DCMediaVideo.bundle', 'uniapp/Video/DCPGVideo.bundle', 'uniapp/Video/DCSVProgressHUD.bundle']
     video.dependency 'uni_sdk/Core'
-    video.frameworks = 'AudioToolbox', 'AVFoundation', 'CoreGraphics', 'CoreMedia', 'CoreVideo', 'VideoToolbox', 'DCUniVideoPublic', 'IJKMediaFramework', 'MediaPlayer', 'MobileCoreServices', 'OpenGLES', 'QuartzCore', 'UIKit', 'VideoToolbox'
+    video.frameworks = 'AudioToolbox', 'CoreVideo', 'VideoToolbox', 'DCUniVideoPublic', 'IJKMediaFramework', 'MobileCoreServices', 'UIKit'
   end
 
   s.subspec 'Zip' do |zip|
