@@ -1,0 +1,15 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'example' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  pod 'uni_sdk', :path => '../'
+#  pod 'uni_sdk/Log', :path => '../'
+  pod 'uni_sdk/Camera', :path => '../'
+  pod 'uni_sdk/Video', :path => '../'
+  pod 'uni_sdk/Zip', :path => '../'
+  # Pods for example
+
+end
